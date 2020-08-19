@@ -14,11 +14,11 @@ This code is most easily utilized from an account on the supercomputer hosted by
 
 If you are working from your local computer, you need to (1) [download at least some the large ensemble data](http://www.cesm.ucar.edu/projects/community-projects/LENS/data-sets.html) to a local directory (and then change the `rootdir` on line 191 and the `cesmle_20802100_pth` on line 271), and (2) install the environment.yml file in order to use the relevant packages.
 
-### Further updates to the code is required to: 
+### Further updates desired: 
 1. Employ Dask in order to speed up the process of analyzing ensemble members
 2. Debug the map plotting function - it currently does not work as intended.
 
-### Analysis pipeline functions
+# Description of pipeline functions
 #### Calculation functions
 `extract_seasons` - returns only the days that fall within JJA or DJF.<br>
 `calculate_baseline` - extracts the JJA & DJF days from 1920 through 1949 in order to use them as a baseline for defining an 'extreme'.<br>
