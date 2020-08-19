@@ -22,10 +22,10 @@ If you are working from your local computer, you need to (1) [download at least 
 #### Calculation functions
 `extract_seasons` - returns only the days that fall within JJA or DJF.<br>
 `calculate_baseline` - extracts the JJA & DJF days from 1920 through 1949 in order to use them as a baseline for defining an 'extreme'.<br>
-`find_extremes` - calls `calculate_baseline` and returns days that exceed 2 standard deviations of the baseline period (<2$\sigma$ & >2$\sigma$ for a total of 4 different times of extremes: hot summers, cold summers, hot winters, cold winters).<br>
-`count_extremedays_peryear` - given the list of extremes found, count the number of times those extremes occur ever year.<br>
-`count_extreme_freq_in_time` - a function that puts all four of the above functions together.<br>
-`calculation_driver` - this code performs filename I/O in order to execute the `count_extreme_freq_in_time` over every ensemble member. The output is, for each ensemble member, (1) a baseline file for the summer days, (2) a baseline file for the winter days, (3) a file with a timeseries of the number of extremes per year for each of the four types of extremes.<br><br>
+`find_extremes` - calls `calculate_baseline` and returns days that exceed 2 standard deviations of the baseline period (<2$\sigma$ & >2$\sigma$ for a total of 4 different types of extremes: hot summers, cold summers, hot winters, cold winters).<br>
+`count_extremedays_peryear` - count the number of times each of the four extremes occur each year.<br>
+`count_extreme_freq_in_time` - a function that combines all of the above functions.<br>
+`calculation_driver` - this code performs filename I/O in order to execute the `count_extreme_freq_in_time` over every ensemble member. The calculate outputs three small files for each ensemble member: (1) a baseline file for the summer days, (2) a baseline file for the winter days, (3) a file with a timeseries of the number of extremes per year for each of the four types of extremes.<br><br>
 #### Plotting functions - run after the completion of calculation functions over all ensemble members
 `return_daily_temp_dists` - given the ensemble number and season, opens the baseline & extreme files and returns the distribution of seasons during the end of the 22nd century.<br>
 `dist_plot` - given the ensemble number, season, and latitude & longitudinal coordinates, plots the baseline distribution overlaid the end-of-century distribution calculated with `return_daily_temp_dists`. <br>
