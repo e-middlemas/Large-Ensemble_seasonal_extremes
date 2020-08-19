@@ -1,13 +1,13 @@
 # Large-Ensemble_seasonal_extremes
 
 ### Problem statement
-This is code that I wrote in response to an interview assignment. The goal was to create an end-to-end climate data analysis that meets the following requirements: 
+This is code that I wrote in response to a job interview assignment. The assignment was to create an end-to-end climate data analysis that meets the following requirements: 
 1. Is no longer than 500 lines of code(+comments)
 2. Illustrates objective-oriented programming (complete with functions or classes)
-3. Possibly exhibits knowledge of bash scripting, climate model ensembles, downscaling methods, and regional climate analysis.
+3. (optional) Possibly exhibits knowledge of bash scripting, climate model ensembles, downscaling methods, and regional climate analysis.
 
 ### Objective
-Among the three topics listed in no. 3 above, I am most familiar with model ensembles. Ths, I chose to extract and plot the change in the number of daily extremes during summer and winter seasons from 1920 throughu 2100 in the CESM1 Large Ensemble. I visualize the change in frequency of four different types of extremes: cold summers, hot summers, cold winters, and hot winters.
+Among the three topics listed in no. 3 above, I am most familiar with model ensembles. Thus, I chose to extract and plot the change in the number of daily extremes during summer and winter seasons from 1920 throughu 2100 in the CESM1 Large Ensemble. I visualize the change in frequency of four different types of extremes: cold summers, hot summers, cold winters, and hot winters.
 
 ### Running the code yourself
 This code is most easily utilized from an account on the supercomputer hosted by the National Center for Atmospheric Research, because that's where the CESM1 Large Ensemble data is stored. If you have an account, you can simply utilize the NCAR_pylib module to access the relevant packages, and use the bash script to submit the python script to a Casper node.
